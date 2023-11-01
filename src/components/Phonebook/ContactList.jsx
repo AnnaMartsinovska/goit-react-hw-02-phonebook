@@ -1,4 +1,5 @@
 import { StyledList, StyledEl } from './Phonebook.styled';
+import propTypes from 'prop-types';
 
 export const ContactList = ({ filterData, onDelete }) => {
   const filteredData = filterData;
@@ -15,4 +16,9 @@ export const ContactList = ({ filterData, onDelete }) => {
       ))}
     </StyledList>
   );
+};
+
+ContactList.propTypes = {
+  filterData: propTypes.func.isRequired,
+  onDelete: propTypes.func.isRequired,
 };

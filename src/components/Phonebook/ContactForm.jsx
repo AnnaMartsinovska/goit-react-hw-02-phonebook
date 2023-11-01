@@ -6,8 +6,14 @@ import {
   StyledButton,
 } from './Phonebook.styled';
 import { nanoid } from 'nanoid';
+import propTypes from 'prop-types';
 
 class ContactForm extends React.Component {
+  static propTypes = {
+    contacts: propTypes.array.isRequired,
+    onAddContacts: propTypes.func.isRequired,
+  };
+
   state = {
     name: '',
     number: '',
