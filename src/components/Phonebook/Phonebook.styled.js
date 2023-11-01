@@ -38,3 +38,8 @@ export const StyledForm = styled.form`
   flex-direction: column;
   margin-bottom: 16px;
 `;
+
+export const StyledEl = styled.li`
+  margin-left: 50px;
+  margin-bottom: 10px;
+`;
